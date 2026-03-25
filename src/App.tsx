@@ -20,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <CursorGlow />
         <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
