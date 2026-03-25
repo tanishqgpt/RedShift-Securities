@@ -2,18 +2,35 @@ import { useState } from 'react';
 import { Send } from 'lucide-react';
 import ScrollSection from '@/components/ScrollSection';
 
+const WEB3FORMS_KEY = '5cb86383-5811-4f46-864b-a704f40a494c';
+
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', company: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Contact Inquiry — ${form.name}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company}\n\nMessage:\n${form.message}`
-    );
-    window.open(`mailto:tanishqgpt3@gmail.com?subject=${subject}&body=${body}`, '_blank');
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          message: form.message,
+          subject: `Contact Inquiry — ${form.name}`,
+        }),
+      });
+      if (res.ok) setSubmitted(true);
+    } catch {
+      // silently fail
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -102,9 +119,10 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-primary text-primary-foreground font-display font-semibold text-sm py-3.5 rounded-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+                  disabled={loading}
+                  className="w-full bg-primary text-primary-foreground font-display font-semibold text-sm py-3.5 rounded-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50"
                 >
-                  Send Message <Send size={16} />
+                  {loading ? 'Sending...' : 'Send Message'} {!loading && <Send size={16} />}
                 </button>
               </form>
             )}
