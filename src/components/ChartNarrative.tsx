@@ -207,10 +207,6 @@ export default function ChartNarrative() {
           </div>
         </div>
 
-        {/* Disclaimer */}
-        <p className="absolute bottom-8 text-xs text-muted-foreground opacity-50 mono-text text-center px-6">
-          Illustrative / hypothetical visualization only. Not representative of actual trading results.
-        </p>
       </div>
     </div>
   );
