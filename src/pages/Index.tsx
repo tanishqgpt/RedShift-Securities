@@ -205,8 +205,8 @@ export default function Index() {
               <div className="flex gap-4">
                 <Cpu className="text-primary mt-1 shrink-0" size={20} />
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">Purpose-Built Infrastructure</h3>
-                  <p className="text-muted-foreground text-sm">Custom execution systems designed for reliability, speed, and observability. Every component is monitored, tested, and continuously improved.</p>
+                  <h3 className="font-display font-semibold text-foreground mb-1">ML-Powered Infrastructure</h3>
+                  <p className="text-muted-foreground text-sm">Machine learning pipelines from data ingestion to live execution. Our models continuously learn and adapt to evolving market microstructure across Indian exchanges.</p>
                 </div>
               </div>
               <div className="flex gap-4">
