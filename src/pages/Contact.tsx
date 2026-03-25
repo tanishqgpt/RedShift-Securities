@@ -8,6 +8,11 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Contact Inquiry — ${form.name}`);
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company}\n\nMessage:\n${form.message}`
+    );
+    window.open(`mailto:tanishqgpt3@gmail.com?subject=${subject}&body=${body}`, '_blank');
     setSubmitted(true);
   };
 
@@ -28,7 +33,7 @@ export default function Contact() {
             <div className="space-y-6">
               <div>
                 <p className="mono-text text-xs text-muted-foreground mb-1">EMAIL</p>
-                <p className="text-foreground font-display">[GENERAL_EMAIL]</p>
+                <a href="mailto:tanishqgpt3@gmail.com" className="text-foreground font-display hover:text-primary transition-colors">tanishqgpt3@gmail.com</a>
               </div>
               <div>
                 <p className="mono-text text-xs text-muted-foreground mb-1">PHONE</p>
