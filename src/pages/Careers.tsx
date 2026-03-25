@@ -19,9 +19,9 @@ export default function Careers() {
             Build what <span className="text-gradient-redshift">matters</span>
           </h1>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mb-16 text-lg">
-            Redshift Securities is built by people who care deeply about markets, technology, and
+            Redshift Securities is built by people who care deeply about Indian markets, machine learning, and
             doing hard things well. We're always looking for exceptional individuals who want to
-            work at the intersection of quantitative finance and systems engineering.
+            work at the intersection of AI, quantitative finance, and systems engineering.
           </p>
 
           {/* Values */}
