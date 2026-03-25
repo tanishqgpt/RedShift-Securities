@@ -36,6 +36,11 @@ export default function Contact() {
 
   return (
     <main className="pt-20">
+      <PageMeta
+        title="Contact Us"
+        description="Get in touch with Redshift Securities for institutional inquiries, partnership discussions, or regulatory matters."
+        path="/contact"
+      />
       <ScrollSection>
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>

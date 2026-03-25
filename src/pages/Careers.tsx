@@ -115,6 +115,28 @@ export default function Careers() {
 
   return (
     <main className="pt-20">
+      <PageMeta
+        title="Careers"
+        description="Join Redshift Securities — we're hiring quantitative researchers and engineers to build ML-driven trading systems for Indian markets."
+        path="/careers"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'JobPosting',
+          title: jobDescription.title,
+          description: jobDescription.overview,
+          employmentType: 'FULL_TIME',
+          hiringOrganization: {
+            '@type': 'Organization',
+            name: 'Redshift Securities',
+            sameAs: 'https://redshiftsecurities.com',
+          },
+          jobLocation: {
+            '@type': 'Place',
+            address: { '@type': 'PostalAddress', addressCountry: 'IN' },
+          },
+          datePosted: '2025-01-01',
+        }}
+      />
       {/* Hero */}
       <ScrollSection>
         <div className="max-w-4xl mx-auto">

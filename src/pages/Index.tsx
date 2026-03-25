@@ -44,6 +44,12 @@ const founder = {
 export default function Index() {
   return (
     <main>
+      <PageMeta
+        title="Redshift Securities — ML-Driven Proprietary Trading Firm in India"
+        description="Redshift Securities is a proprietary trading firm deploying ML-driven systematic strategies across Indian equities, derivatives, commodities, and currency markets."
+        path="/"
+        jsonLd={organizationSchema}
+      />
       {/* ====== HERO ====== */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Suspense fallback={null}>
