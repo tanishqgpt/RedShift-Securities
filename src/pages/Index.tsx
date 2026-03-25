@@ -21,14 +21,12 @@ const markets = [
   { name: 'Currency Derivatives', desc: 'INR currency pairs on NSE and BSE currency segments' },
 ];
 
-const team = [
-  { name: 'J. Kovacs', role: 'Chief Executive Officer', area: 'Strategy & Operations' },
-  { name: 'S. Chen', role: 'Chief Technology Officer', area: 'Systems Architecture' },
-  { name: 'M. Okafor', role: 'Head of Trading', area: 'Execution & Strategy' },
-  { name: 'L. Virtanen', role: 'Chief Risk Officer', area: 'Risk Management' },
-  { name: 'R. Patel', role: 'Head of Research', area: 'Quantitative Strategy' },
-  { name: 'A. Moreau', role: 'General Counsel', area: 'Legal & Compliance' },
-];
+const founder = {
+  name: 'Tanishq Gupta',
+  role: 'Founder & Partner',
+  area: 'Strategy, Technology & Operations',
+  linkedin: 'https://www.linkedin.com/in/tanishq-gupta-140824133',
+};
 
 export default function Index() {
   return (
