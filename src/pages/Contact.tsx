@@ -119,9 +119,10 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-primary text-primary-foreground font-display font-semibold text-sm py-3.5 rounded-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+                  disabled={loading}
+                  className="w-full bg-primary text-primary-foreground font-display font-semibold text-sm py-3.5 rounded-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50"
                 >
-                  Send Message <Send size={16} />
+                  {loading ? 'Sending...' : 'Send Message'} {!loading && <Send size={16} />}
                 </button>
               </form>
             )}
