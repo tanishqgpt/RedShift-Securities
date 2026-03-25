@@ -24,7 +24,7 @@ const markets = [
 const team = [
   { name: 'J. Kovacs', role: 'Chief Executive Officer', area: 'Strategy & Operations' },
   { name: 'S. Chen', role: 'Chief Technology Officer', area: 'Systems Architecture' },
-  { name: 'M. Okafor', role: 'Head of Trading', area: 'Execution & Market Making' },
+  { name: 'M. Okafor', role: 'Head of Trading', area: 'Execution & Strategy' },
   { name: 'L. Virtanen', role: 'Chief Risk Officer', area: 'Risk Management' },
   { name: 'R. Patel', role: 'Head of Research', area: 'Quantitative Strategy' },
   { name: 'A. Moreau', role: 'General Counsel', area: 'Legal & Compliance' },
