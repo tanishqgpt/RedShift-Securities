@@ -1,5 +1,5 @@
-import { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { useRef, useEffect, useState } from 'react';
+import { useInView } from 'framer-motion';
 
 interface Props {
   value: number;
@@ -9,47 +9,34 @@ interface Props {
   className?: string;
 }
 
-export default function AnimatedCounter({ value, suffix = '', prefix = '', duration = 1.5, className = '' }: Props) {
+export default function AnimatedCounter({ value, suffix = '', prefix = '', duration = 1500, className = '' }: Props) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
+  const [display, setDisplay] = useState(0);
+  const startedRef = useRef(false);
+
+  useEffect(() => {
+    if (!isInView || startedRef.current) return;
+    startedRef.current = true;
+
+    const start = performance.now();
+    const isInt = Number.isInteger(value);
+
+    const tick = (now: number) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = eased * value;
+      setDisplay(isInt ? Math.round(current) : parseFloat(current.toFixed(1)));
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, [isInView, value, duration]);
 
   return (
-    <motion.span
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0 }}
-      animate={isInView ? { opacity: 1 } : {}}
-    >
-      {isInView ? (
-        <Counter value={value} duration={duration} prefix={prefix} suffix={suffix} />
-      ) : (
-        `${prefix}0${suffix}`
-      )}
-    </motion.span>
-  );
-}
-
-function Counter({ value, duration, prefix, suffix }: { value: number; duration: number; prefix: string; suffix: string }) {
-  const ref = useRef<HTMLSpanElement>(null);
-
-  return (
-    <motion.span
-      ref={ref}
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-    >
-      <motion.span
-        initial={0}
-        animate={value}
-        transition={{ duration, ease: [0.16, 1, 0.3, 1] }}
-        onUpdate={(latest) => {
-          if (ref.current) {
-            const num = Number(latest);
-            ref.current.textContent = `${prefix}${Number.isInteger(value) ? Math.round(num) : num.toFixed(1)}${suffix}`;
-          }
-        }}
-      />
-    </motion.span>
+    <span ref={ref} className={className}>
+      {prefix}{display}{suffix}
+    </span>
   );
 }
