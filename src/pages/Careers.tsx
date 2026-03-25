@@ -63,19 +63,31 @@ export default function Careers() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
-
-    const subject = encodeURIComponent(`Quant Researcher Application — ${form.name}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nCollege/University: ${form.college}\nDegree: ${form.degree}\nYears of Experience: ${form.experience}\nCurrent Role: ${form.currentRole}\nLinkedIn: ${form.linkedin}\nResume Link: ${form.resumeLink}\n\nCover Note:\n${form.coverNote}`
-    );
-
-    window.open(
-      `mailto:admin@redshiftsecurities.com?subject=${subject}&body=${body}`,
-      '_blank'
-    );
-
-    setSending(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: '5cb86383-5811-4f46-864b-a704f40a494c',
+          subject: `Quant Researcher Application — ${form.name}`,
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          'College / University': form.college,
+          Degree: form.degree,
+          'Years of Experience': form.experience,
+          'Current Role': form.currentRole || 'N/A',
+          LinkedIn: form.linkedin || 'N/A',
+          'Resume Link': form.resumeLink,
+          'Cover Note': form.coverNote,
+        }),
+      });
+      if (res.ok) setSubmitted(true);
+    } catch {
+      // silently fail
+    } finally {
+      setSending(false);
+    }
   };
 
   const toggleSection = (section: string) => {
