@@ -8,6 +8,11 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Contact Inquiry — ${form.name}`);
+    const body = encodeURIComponent(
+      `Name: ${form.name}\nEmail: ${form.email}\nCompany: ${form.company}\n\nMessage:\n${form.message}`
+    );
+    window.open(`mailto:tanishqgpt3@gmail.com?subject=${subject}&body=${body}`, '_blank');
     setSubmitted(true);
   };
 
