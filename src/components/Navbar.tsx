@@ -17,6 +17,7 @@ const navItems = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [logoHovered, setLogoHovered] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -47,9 +48,33 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="font-display font-bold text-lg tracking-tight text-foreground">
-          <span className="text-gradient-redshift">Redshift</span>{' '}
-          <span className="font-light">Securities</span>
+        <Link
+          to="/"
+          className="font-display font-bold text-lg tracking-tight text-foreground relative"
+          onMouseEnter={() => setLogoHovered(true)}
+          onMouseLeave={() => setLogoHovered(false)}
+        >
+          <motion.span
+            className="text-gradient-redshift inline-block"
+            animate={{
+              filter: logoHovered
+                ? 'brightness(1.3) drop-shadow(0 0 8px hsl(var(--primary) / 0.5))'
+                : 'brightness(1) drop-shadow(0 0 0px transparent)',
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            Redshift
+          </motion.span>{' '}
+          <motion.span
+            className="font-light inline-block"
+            animate={{
+              color: logoHovered ? 'hsl(var(--foreground))' : 'hsl(var(--foreground) / 0.85)',
+              letterSpacing: logoHovered ? '0.04em' : '0em',
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            Securities
+          </motion.span>
         </Link>
 
         {/* Desktop nav */}
