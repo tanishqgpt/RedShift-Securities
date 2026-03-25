@@ -8,10 +8,10 @@ import ChartNarrative from '@/components/ChartNarrative';
 const CosmicScene = lazy(() => import('@/components/CosmicScene'));
 
 const services = [
-  { icon: TrendingUp, title: 'Proprietary Trading', desc: 'Deploying firm capital across global markets with systematic, risk-managed strategies.' },
-  { icon: Zap, title: 'Execution Services', desc: 'High-performance execution infrastructure minimizing market impact and latency.' },
-  { icon: BarChart3, title: 'Market Making', desc: 'Providing continuous liquidity across asset classes, contributing to market efficiency.' },
-  { icon: Target, title: 'Quantitative Research', desc: 'Data-driven research and model development to identify structural opportunities.' },
+  { icon: TrendingUp, title: 'Proprietary Trading', desc: 'Deploying firm capital in Indian markets using systematic, ML-driven strategies with disciplined risk management.' },
+  { icon: Cpu, title: 'ML & AI Research', desc: 'Developing and deploying machine learning models to identify patterns, optimize execution, and adapt to evolving market regimes.' },
+  { icon: Zap, title: 'Medium Frequency Execution', desc: 'Purpose-built execution systems operating at medium frequency — balancing speed with signal quality across Indian exchanges.' },
+  { icon: Target, title: 'Quantitative Research', desc: 'Data-driven research combining statistical methods with AI to uncover structural opportunities in Indian equities and derivatives.' },
 ];
 
 const markets = [
