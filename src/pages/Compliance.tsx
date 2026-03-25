@@ -1,8 +1,14 @@
 import ScrollSection from '@/components/ScrollSection';
+import PageMeta from '@/components/PageMeta';
 
 export default function Compliance() {
   return (
     <main className="pt-20">
+      <PageMeta
+        title="Compliance & Regulatory Information"
+        description="Redshift Securities regulatory status, risk disclosures, compliance policies, and legal information for our proprietary trading operations in India."
+        path="/compliance"
+      />
       <ScrollSection>
         <div className="max-w-4xl mx-auto">
           <p className="mono-text text-xs tracking-[0.3em] text-primary mb-4 uppercase">Legal & Compliance</p>

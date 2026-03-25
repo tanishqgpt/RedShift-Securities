@@ -4,8 +4,21 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Shield, Zap, BarChart3, Globe, Users, Cpu, Target, TrendingUp, ExternalLink } from 'lucide-react';
 import ScrollSection from '@/components/ScrollSection';
 import ChartNarrative from '@/components/ChartNarrative';
+import PageMeta from '@/components/PageMeta';
 
 const CosmicScene = lazy(() => import('@/components/CosmicScene'));
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Redshift Securities',
+  url: 'https://redshiftsecurities.com',
+  description: 'Proprietary trading firm specializing in ML-driven systematic trading across Indian markets.',
+  foundingDate: '2024',
+  founder: { '@type': 'Person', name: 'Tanishq Gupta' },
+  address: { '@type': 'PostalAddress', addressCountry: 'IN' },
+  sameAs: ['https://www.linkedin.com/in/tanishq-gupta-140824133'],
+};
 
 const services = [
   { icon: TrendingUp, title: 'Proprietary Trading', desc: 'Deploying firm capital in Indian markets using systematic, ML-driven strategies with disciplined risk management.' },
@@ -31,6 +44,12 @@ const founder = {
 export default function Index() {
   return (
     <main>
+      <PageMeta
+        title="Redshift Securities — ML-Driven Proprietary Trading Firm in India"
+        description="Redshift Securities is a proprietary trading firm deploying ML-driven systematic strategies across Indian equities, derivatives, commodities, and currency markets."
+        path="/"
+        jsonLd={organizationSchema}
+      />
       {/* ====== HERO ====== */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Suspense fallback={null}>
