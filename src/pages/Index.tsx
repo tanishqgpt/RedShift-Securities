@@ -102,14 +102,14 @@ export default function Index() {
           </div>
           <div className="lg:col-span-3 space-y-6">
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Redshift Securities is a professional trading firm focused on systematic, technology-driven
-              approaches to global financial markets. We operate proprietary capital with an emphasis on
-              disciplined risk management, robust infrastructure, and continuous research.
+              Redshift Securities is a medium frequency proprietary trading firm focused exclusively on
+              Indian financial markets. We combine machine learning and artificial intelligence with
+              robust infrastructure to deploy systematic, risk-managed strategies across NSE, BSE, and MCX.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Founded on the principle that sustainable edge comes from process — not prediction — we
-              invest heavily in systems, people, and a culture of intellectual rigor. Our name reflects
-              our perspective: the most meaningful signals emerge over distance and time.
+              Founded on the principle that sustainable edge comes from adaptive intelligence — not static rules — we
+              invest heavily in ML research, systems engineering, and a culture of intellectual rigor. Our name reflects
+              our perspective: the most meaningful signals emerge when you look deeper than the surface.
             </p>
             <div className="pt-4 flex gap-8 border-t border-border">
               <div>
