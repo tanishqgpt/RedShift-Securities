@@ -182,9 +182,12 @@ export default function ChartNarrative() {
   return (
     <div ref={containerRef} className="relative" style={{ height: '400vh' }}>
       <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
+        {/* Cosmic particles */}
+        <CosmicParticles scrollProgress={scrollProgress} phase={currentPhase} />
+
         {/* Subtle animated background gradient */}
         <div
-          className="absolute inset-0 transition-colors duration-1000"
+          className="absolute inset-0 transition-colors duration-1000 pointer-events-none"
           style={{
             background: currentPhase === 1
               ? 'radial-gradient(ellipse at 60% 50%, hsl(0 30% 8% / 0.5) 0%, hsl(230 15% 5%) 70%)'
