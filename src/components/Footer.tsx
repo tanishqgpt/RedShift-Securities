@@ -12,8 +12,8 @@ export default function Footer() {
               <span className="font-light text-foreground">Securities</span>
             </h3>
             <p className="text-muted-foreground text-sm max-w-md leading-relaxed">
-              Institutional-grade trading, execution, and risk management. Operating with
-              discipline, transparency, and a systems-first approach to global markets.
+            AI-powered medium frequency trading across Indian markets. Operating with
+            discipline, transparency, and a machine learning-first approach.
             </p>
           </div>
 
@@ -45,8 +45,8 @@ export default function Footer() {
             for all investors. Past performance is not indicative of future results. The information
             on this website is for general informational purposes only and does not constitute
             investment advice, a solicitation, or an offer to buy or sell any securities or financial
-            instruments. Redshift Securities is registered with [REGULATORY_BODY] under license
-            number [LICENSE_NUMBER].
+            instruments. Redshift Securities operates exclusively in Indian markets and is registered
+            with [REGULATORY_BODY] under registration number [LICENSE_NUMBER].
           </p>
           <p className="text-xs text-muted-foreground mt-4">
             © {new Date().getFullYear()} Redshift Securities. All rights reserved.

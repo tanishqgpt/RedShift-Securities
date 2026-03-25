@@ -8,25 +8,23 @@ import ChartNarrative from '@/components/ChartNarrative';
 const CosmicScene = lazy(() => import('@/components/CosmicScene'));
 
 const services = [
-  { icon: TrendingUp, title: 'Proprietary Trading', desc: 'Deploying firm capital across global markets with systematic, risk-managed strategies.' },
-  { icon: Zap, title: 'Execution Services', desc: 'High-performance execution infrastructure minimizing market impact and latency.' },
-  { icon: BarChart3, title: 'Market Making', desc: 'Providing continuous liquidity across asset classes, contributing to market efficiency.' },
-  { icon: Target, title: 'Quantitative Research', desc: 'Data-driven research and model development to identify structural opportunities.' },
+  { icon: TrendingUp, title: 'Proprietary Trading', desc: 'Deploying firm capital in Indian markets using systematic, ML-driven strategies with disciplined risk management.' },
+  { icon: Cpu, title: 'ML & AI Research', desc: 'Developing and deploying machine learning models to identify patterns, optimize execution, and adapt to evolving market regimes.' },
+  { icon: Zap, title: 'Medium Frequency Execution', desc: 'Purpose-built execution systems operating at medium frequency — balancing speed with signal quality across Indian exchanges.' },
+  { icon: Target, title: 'Quantitative Research', desc: 'Data-driven research combining statistical methods with AI to uncover structural opportunities in Indian equities and derivatives.' },
 ];
 
 const markets = [
-  { name: 'Equities', desc: 'Global equity markets — cash and synthetic' },
-  { name: 'Derivatives', desc: 'Listed and OTC options, futures, swaps' },
-  { name: 'Fixed Income', desc: 'Government and corporate bonds, rates' },
-  { name: 'FX', desc: 'Major, minor, and emerging market currencies' },
-  { name: 'Commodities', desc: 'Energy, metals, and agricultural markets' },
-  { name: 'Digital Assets', desc: 'Select cryptocurrency markets (where regulated)' },
+  { name: 'Indian Equities', desc: 'NSE and BSE — cash equities across large, mid, and small cap segments' },
+  { name: 'Equity Derivatives', desc: 'Index and stock futures & options on NSE — Nifty, Bank Nifty, and single stocks' },
+  { name: 'Commodity Derivatives', desc: 'MCX-listed contracts — metals, energy, and agricultural commodities' },
+  { name: 'Currency Derivatives', desc: 'INR currency pairs on NSE and BSE currency segments' },
 ];
 
 const team = [
   { name: 'J. Kovacs', role: 'Chief Executive Officer', area: 'Strategy & Operations' },
   { name: 'S. Chen', role: 'Chief Technology Officer', area: 'Systems Architecture' },
-  { name: 'M. Okafor', role: 'Head of Trading', area: 'Execution & Market Making' },
+  { name: 'M. Okafor', role: 'Head of Trading', area: 'Execution & Strategy' },
   { name: 'L. Virtanen', role: 'Chief Risk Officer', area: 'Risk Management' },
   { name: 'R. Patel', role: 'Head of Research', area: 'Quantitative Strategy' },
   { name: 'A. Moreau', role: 'General Counsel', area: 'Legal & Compliance' },
@@ -53,7 +51,7 @@ export default function Index() {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <p className="mono-text text-xs md:text-sm tracking-[0.3em] text-muted-foreground mb-6 uppercase">
-              Institutional Trading & Market Making
+              AI-Driven Medium Frequency Trading
             </p>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-8">
               <span className="text-gradient-redshift">Redshift</span>
@@ -61,8 +59,8 @@ export default function Index() {
               <span className="text-foreground font-light">Securities</span>
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-body">
-              Precision-engineered trading infrastructure. Disciplined risk management.
-              Systematic capital deployment across global markets.
+              Machine learning-powered trading systems. Disciplined risk management.
+              Systematic capital deployment across Indian markets.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -104,14 +102,14 @@ export default function Index() {
           </div>
           <div className="lg:col-span-3 space-y-6">
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Redshift Securities is a professional trading firm focused on systematic, technology-driven
-              approaches to global financial markets. We operate proprietary capital with an emphasis on
-              disciplined risk management, robust infrastructure, and continuous research.
+              Redshift Securities is a medium frequency proprietary trading firm focused exclusively on
+              Indian financial markets. We combine machine learning and artificial intelligence with
+              robust infrastructure to deploy systematic, risk-managed strategies across NSE, BSE, and MCX.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Founded on the principle that sustainable edge comes from process — not prediction — we
-              invest heavily in systems, people, and a culture of intellectual rigor. Our name reflects
-              our perspective: the most meaningful signals emerge over distance and time.
+              Founded on the principle that sustainable edge comes from adaptive intelligence — not static rules — we
+              invest heavily in ML research, systems engineering, and a culture of intellectual rigor. Our name reflects
+              our perspective: the most meaningful signals emerge when you look deeper than the surface.
             </p>
             <div className="pt-4 flex gap-8 border-t border-border">
               <div>
@@ -119,12 +117,12 @@ export default function Index() {
                 <p className="text-xs text-muted-foreground mono-text">Founded</p>
               </div>
               <div>
-                <p className="font-display text-2xl font-bold text-foreground">[CITY]</p>
-                <p className="text-xs text-muted-foreground mono-text">Headquarters</p>
+                <p className="font-display text-2xl font-bold text-foreground">India</p>
+                <p className="text-xs text-muted-foreground mono-text">Markets</p>
               </div>
               <div>
-                <p className="font-display text-2xl font-bold text-foreground">24/5</p>
-                <p className="text-xs text-muted-foreground mono-text">Market Coverage</p>
+                <p className="font-display text-2xl font-bold text-foreground">ML/AI</p>
+                <p className="text-xs text-muted-foreground mono-text">Technology</p>
               </div>
             </div>
           </div>
@@ -174,12 +172,12 @@ export default function Index() {
             <div className="lg:col-span-2">
               <p className="mono-text text-xs tracking-[0.3em] text-primary mb-4 uppercase">Markets</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                Global reach,<br />
-                <span className="text-gradient-redshift">local depth</span>
+                Indian markets,<br />
+                <span className="text-gradient-redshift">deep expertise</span>
               </h2>
               <p className="text-muted-foreground mt-6 leading-relaxed">
-                We operate across multiple asset classes and geographies, adapting our approach
-                to the structural characteristics of each market.
+                We focus exclusively on Indian financial markets, operating across equities,
+                derivatives, commodities, and currencies on NSE, BSE, and MCX.
               </p>
             </div>
             <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -207,8 +205,8 @@ export default function Index() {
               <div className="flex gap-4">
                 <Cpu className="text-primary mt-1 shrink-0" size={20} />
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">Purpose-Built Infrastructure</h3>
-                  <p className="text-muted-foreground text-sm">Custom execution systems designed for reliability, speed, and observability. Every component is monitored, tested, and continuously improved.</p>
+                  <h3 className="font-display font-semibold text-foreground mb-1">ML-Powered Infrastructure</h3>
+                  <p className="text-muted-foreground text-sm">Machine learning pipelines from data ingestion to live execution. Our models continuously learn and adapt to evolving market microstructure across Indian exchanges.</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -221,8 +219,8 @@ export default function Index() {
               <div className="flex gap-4">
                 <BarChart3 className="text-primary mt-1 shrink-0" size={20} />
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">Research-Driven</h3>
-                  <p className="text-muted-foreground text-sm">Quantitative research informs every strategy. We combine statistical rigor with market microstructure expertise to maintain systematic edge.</p>
+                  <h3 className="font-display font-semibold text-foreground mb-1">AI-First Research</h3>
+                  <p className="text-muted-foreground text-sm">Deep learning, reinforcement learning, and classical ML methods drive our alpha research. We combine AI with domain expertise in Indian market microstructure.</p>
                 </div>
               </div>
             </div>
@@ -240,12 +238,12 @@ export default function Index() {
                   <p className="text-xs text-muted-foreground">Uptime</p>
                 </div>
                 <div>
-                  <p className="font-display text-lg font-bold text-foreground">&lt;1ms</p>
-                  <p className="text-xs text-muted-foreground">Latency</p>
+                  <p className="font-display text-lg font-bold text-foreground">ML/AI</p>
+                  <p className="text-xs text-muted-foreground">Core Tech</p>
                 </div>
                 <div>
-                  <p className="font-display text-lg font-bold text-foreground">24/5</p>
-                  <p className="text-xs text-muted-foreground">Coverage</p>
+                  <p className="font-display text-lg font-bold text-foreground">MFT</p>
+                  <p className="text-xs text-muted-foreground">Frequency</p>
                 </div>
               </div>
             </div>
