@@ -1,5 +1,6 @@
 import { useRef, useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
+import CosmicParticles from './CosmicParticles';
 
 const phases = [
   { title: 'Market Noise', desc: 'Price discovery in action — volatility is the natural state of markets.' },
