@@ -111,7 +111,7 @@ export default function Index() {
             </p>
             <div className="pt-4 flex gap-8 border-t border-border">
               <div>
-                <p className="font-display text-2xl font-bold text-foreground">[YEAR]</p>
+                <p className="font-display text-2xl font-bold text-foreground">2026</p>
                 <p className="text-xs text-muted-foreground mono-text">Founded</p>
               </div>
               <div>
