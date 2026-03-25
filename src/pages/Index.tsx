@@ -1,7 +1,7 @@
 import { Suspense, lazy } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Shield, Zap, BarChart3, Globe, Users, Cpu, Target, TrendingUp } from 'lucide-react';
+import { ArrowRight, Shield, Zap, BarChart3, Globe, Users, Cpu, Target, TrendingUp, ExternalLink } from 'lucide-react';
 import ScrollSection from '@/components/ScrollSection';
 import ChartNarrative from '@/components/ChartNarrative';
 
@@ -21,14 +21,12 @@ const markets = [
   { name: 'Currency Derivatives', desc: 'INR currency pairs on NSE and BSE currency segments' },
 ];
 
-const team = [
-  { name: 'J. Kovacs', role: 'Chief Executive Officer', area: 'Strategy & Operations' },
-  { name: 'S. Chen', role: 'Chief Technology Officer', area: 'Systems Architecture' },
-  { name: 'M. Okafor', role: 'Head of Trading', area: 'Execution & Strategy' },
-  { name: 'L. Virtanen', role: 'Chief Risk Officer', area: 'Risk Management' },
-  { name: 'R. Patel', role: 'Head of Research', area: 'Quantitative Strategy' },
-  { name: 'A. Moreau', role: 'General Counsel', area: 'Legal & Compliance' },
-];
+const founder = {
+  name: 'Tanishq Gupta',
+  role: 'Founder & Partner',
+  area: 'Strategy, Technology & Operations',
+  linkedin: 'https://www.linkedin.com/in/tanishq-gupta-140824133',
+};
 
 export default function Index() {
   return (
@@ -251,24 +249,31 @@ export default function Index() {
         </div>
       </ScrollSection>
 
-      {/* ====== TEAM ====== */}
+      {/* ====== FOUNDER ====== */}
       <ScrollSection id="team" className="border-t border-border">
         <div className="max-w-7xl mx-auto">
           <p className="mono-text text-xs tracking-[0.3em] text-primary mb-4 uppercase">Leadership</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-16">
-            Our <span className="text-gradient-redshift">team</span>
+            Founder & <span className="text-gradient-redshift">Partner</span>
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {team.map((t, i) => (
-              <div key={i} className="glass-panel rounded-lg p-6 hover:border-primary/20 transition-colors">
-                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mb-4">
-                  <Users className="text-muted-foreground" size={18} />
-                </div>
-                <h3 className="font-display font-semibold text-foreground">{t.name}</h3>
-                <p className="text-primary text-sm">{t.role}</p>
-                <p className="text-muted-foreground text-xs mt-1">{t.area}</p>
+          <div className="max-w-md mx-auto">
+            <div className="glass-panel rounded-lg p-8 hover:border-primary/20 transition-colors text-center">
+              <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mb-5 mx-auto">
+                <Users className="text-muted-foreground" size={22} />
               </div>
-            ))}
+              <h3 className="font-display text-xl font-semibold text-foreground">{founder.name}</h3>
+              <p className="text-primary text-sm mt-1">{founder.role}</p>
+              <p className="text-muted-foreground text-xs mt-1">{founder.area}</p>
+              <a
+                href={founder.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-primary text-sm mt-4 hover:underline"
+              >
+                <ExternalLink size={14} />
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </ScrollSection>
