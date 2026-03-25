@@ -235,10 +235,9 @@ export default function Careers() {
                   <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
                     <Send className="text-primary" size={24} />
                   </div>
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">Application Ready</h3>
+                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">Application Submitted</h3>
                   <p className="text-muted-foreground text-sm max-w-md">
-                    Your email client should have opened with the application details.
-                    Please send the email to complete your application. We'll review and respond within 5–7 business days.
+                    Your application has been sent successfully. We'll review and respond within 5–7 business days.
                   </p>
                 </div>
               ) : (
