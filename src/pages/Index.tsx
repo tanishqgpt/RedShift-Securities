@@ -117,12 +117,12 @@ export default function Index() {
                 <p className="text-xs text-muted-foreground mono-text">Founded</p>
               </div>
               <div>
-                <p className="font-display text-2xl font-bold text-foreground">[CITY]</p>
-                <p className="text-xs text-muted-foreground mono-text">Headquarters</p>
+                <p className="font-display text-2xl font-bold text-foreground">India</p>
+                <p className="text-xs text-muted-foreground mono-text">Markets</p>
               </div>
               <div>
-                <p className="font-display text-2xl font-bold text-foreground">24/5</p>
-                <p className="text-xs text-muted-foreground mono-text">Market Coverage</p>
+                <p className="font-display text-2xl font-bold text-foreground">ML/AI</p>
+                <p className="text-xs text-muted-foreground mono-text">Technology</p>
               </div>
             </div>
           </div>
