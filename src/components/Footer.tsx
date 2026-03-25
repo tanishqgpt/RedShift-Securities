@@ -12,8 +12,8 @@ export default function Footer() {
               <span className="font-light text-foreground">Securities</span>
             </h3>
             <p className="text-muted-foreground text-sm max-w-md leading-relaxed">
-              Institutional-grade trading, execution, and risk management. Operating with
-              discipline, transparency, and a systems-first approach to global markets.
+            AI-powered medium frequency trading across Indian markets. Operating with
+            discipline, transparency, and a machine learning-first approach.
             </p>
           </div>
 
