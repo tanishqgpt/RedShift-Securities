@@ -238,12 +238,12 @@ export default function Index() {
                   <p className="text-xs text-muted-foreground">Uptime</p>
                 </div>
                 <div>
-                  <p className="font-display text-lg font-bold text-foreground">&lt;1ms</p>
-                  <p className="text-xs text-muted-foreground">Latency</p>
+                  <p className="font-display text-lg font-bold text-foreground">ML/AI</p>
+                  <p className="text-xs text-muted-foreground">Core Tech</p>
                 </div>
                 <div>
-                  <p className="font-display text-lg font-bold text-foreground">24/5</p>
-                  <p className="text-xs text-muted-foreground">Coverage</p>
+                  <p className="font-display text-lg font-bold text-foreground">MFT</p>
+                  <p className="text-xs text-muted-foreground">Frequency</p>
                 </div>
               </div>
             </div>

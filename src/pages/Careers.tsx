@@ -39,7 +39,7 @@ export default function Careers() {
           <div className="glass-panel rounded-lg p-8 text-center">
             <h2 className="font-display text-2xl font-semibold text-foreground mb-4">Open Roles</h2>
             <p className="text-muted-foreground mb-6">
-              We're selectively hiring across quantitative research, software engineering,
+              We're selectively hiring across ML research, quantitative development, software engineering,
               and trading operations. If you think you'd be a good fit, we'd love to hear from you.
             </p>
             <Link

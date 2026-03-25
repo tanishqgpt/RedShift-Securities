@@ -15,7 +15,8 @@ export default function Compliance() {
             <div className="glass-panel rounded-lg p-8">
               <h2 className="font-display text-xl font-semibold text-foreground mb-4">Regulatory Status</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Redshift Securities is authorized and regulated by [REGULATORY_BODY] under license
+                Redshift Securities is a proprietary trading firm operating in Indian financial markets.
+                The firm is registered with [REGULATORY_BODY] (e.g., SEBI) under registration
                 number [LICENSE_NUMBER]. Our registered office is located at [REGISTERED_ADDRESS].
               </p>
             </div>
