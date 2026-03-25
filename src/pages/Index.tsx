@@ -172,12 +172,12 @@ export default function Index() {
             <div className="lg:col-span-2">
               <p className="mono-text text-xs tracking-[0.3em] text-primary mb-4 uppercase">Markets</p>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                Global reach,<br />
-                <span className="text-gradient-redshift">local depth</span>
+                Indian markets,<br />
+                <span className="text-gradient-redshift">deep expertise</span>
               </h2>
               <p className="text-muted-foreground mt-6 leading-relaxed">
-                We operate across multiple asset classes and geographies, adapting our approach
-                to the structural characteristics of each market.
+                We focus exclusively on Indian financial markets, operating across equities,
+                derivatives, commodities, and currencies on NSE, BSE, and MCX.
               </p>
             </div>
             <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
