@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Shield, Zap, BarChart3, Globe, Users, Cpu, Target, TrendingUp, ExternalLink } from 'lucide-react';
 import ScrollSection from '@/components/ScrollSection';
+import AnimatedCounter from '@/components/AnimatedCounter';
 import ChartNarrative from '@/components/ChartNarrative';
 import PageMeta from '@/components/PageMeta';
 
