@@ -219,8 +219,8 @@ export default function Index() {
               <div className="flex gap-4">
                 <BarChart3 className="text-primary mt-1 shrink-0" size={20} />
                 <div>
-                  <h3 className="font-display font-semibold text-foreground mb-1">Research-Driven</h3>
-                  <p className="text-muted-foreground text-sm">Quantitative research informs every strategy. We combine statistical rigor with market microstructure expertise to maintain systematic edge.</p>
+                  <h3 className="font-display font-semibold text-foreground mb-1">AI-First Research</h3>
+                  <p className="text-muted-foreground text-sm">Deep learning, reinforcement learning, and classical ML methods drive our alpha research. We combine AI with domain expertise in Indian market microstructure.</p>
                 </div>
               </div>
             </div>
