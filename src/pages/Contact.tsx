@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Send } from 'lucide-react';
 import ScrollSection from '@/components/ScrollSection';
+import PageMeta from '@/components/PageMeta';
 
 const WEB3FORMS_KEY = '5cb86383-5811-4f46-864b-a704f40a494c';
 

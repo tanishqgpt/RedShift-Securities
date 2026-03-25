@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight, Send, Briefcase, GraduationCap, Clock, MapPin, ChevronDown, ChevronUp } from 'lucide-react';
 import ScrollSection from '@/components/ScrollSection';
+import PageMeta from '@/components/PageMeta';
 
 const values = [
   { title: 'Intellectual Rigor', desc: 'We question assumptions, test hypotheses, and let evidence guide decisions.' },
