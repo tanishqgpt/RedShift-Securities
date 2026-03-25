@@ -75,7 +75,7 @@ export default function Compliance() {
                 data in accordance with applicable data protection laws. Personal information submitted
                 through our website (e.g., contact forms) will be used solely for the purpose of responding
                 to your inquiry. We do not sell or share personal data with third parties except as required
-                by law or regulation. For full details, contact tanishqgpt3@gmail.com.
+                by law or regulation. For full details, contact admin@redshiftsecurities.com.
               </p>
             </div>
 

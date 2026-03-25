@@ -50,7 +50,7 @@ export default function Contact() {
             <div className="space-y-6">
               <div>
                 <p className="mono-text text-xs text-muted-foreground mb-1">EMAIL</p>
-                <a href="mailto:tanishqgpt3@gmail.com" className="text-foreground font-display hover:text-primary transition-colors">tanishqgpt3@gmail.com</a>
+                <a href="mailto:admin@redshiftsecurities.com" className="text-foreground font-display hover:text-primary transition-colors">admin@redshiftsecurities.com</a>
               </div>
               <div>
                 <p className="mono-text text-xs text-muted-foreground mb-1">PHONE</p>

@@ -70,7 +70,7 @@ export default function Careers() {
     );
 
     window.open(
-      `mailto:tanishqgpt3@gmail.com?subject=${subject}&body=${body}`,
+      `mailto:admin@redshiftsecurities.com?subject=${subject}&body=${body}`,
       '_blank'
     );
 
