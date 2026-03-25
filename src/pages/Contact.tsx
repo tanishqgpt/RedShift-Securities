@@ -54,7 +54,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="mono-text text-xs text-muted-foreground mb-1">PHONE</p>
-                <p className="text-foreground font-display">[PHONE]</p>
+                <a href="tel:+917055064193" className="text-foreground font-display hover:text-primary transition-colors">+91 70550 64193</a>
               </div>
               <div>
                 <p className="mono-text text-xs text-muted-foreground mb-1">REGISTERED ADDRESS</p>
