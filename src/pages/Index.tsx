@@ -15,12 +15,10 @@ const services = [
 ];
 
 const markets = [
-  { name: 'Equities', desc: 'Global equity markets — cash and synthetic' },
-  { name: 'Derivatives', desc: 'Listed and OTC options, futures, swaps' },
-  { name: 'Fixed Income', desc: 'Government and corporate bonds, rates' },
-  { name: 'FX', desc: 'Major, minor, and emerging market currencies' },
-  { name: 'Commodities', desc: 'Energy, metals, and agricultural markets' },
-  { name: 'Digital Assets', desc: 'Select cryptocurrency markets (where regulated)' },
+  { name: 'Indian Equities', desc: 'NSE and BSE — cash equities across large, mid, and small cap segments' },
+  { name: 'Equity Derivatives', desc: 'Index and stock futures & options on NSE — Nifty, Bank Nifty, and single stocks' },
+  { name: 'Commodity Derivatives', desc: 'MCX-listed contracts — metals, energy, and agricultural commodities' },
+  { name: 'Currency Derivatives', desc: 'INR currency pairs on NSE and BSE currency segments' },
 ];
 
 const team = [
