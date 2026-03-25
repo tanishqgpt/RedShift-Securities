@@ -59,8 +59,8 @@ export default function Index() {
               <span className="text-foreground font-light">Securities</span>
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-body">
-              Precision-engineered trading infrastructure. Disciplined risk management.
-              Systematic capital deployment across global markets.
+              Machine learning-powered trading systems. Disciplined risk management.
+              Systematic capital deployment across Indian markets.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
