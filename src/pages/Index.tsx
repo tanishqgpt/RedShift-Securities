@@ -51,7 +51,7 @@ export default function Index() {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <p className="mono-text text-xs md:text-sm tracking-[0.3em] text-muted-foreground mb-6 uppercase">
-              Institutional Trading & Market Making
+              AI-Driven Medium Frequency Trading
             </p>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-8">
               <span className="text-gradient-redshift">Redshift</span>
