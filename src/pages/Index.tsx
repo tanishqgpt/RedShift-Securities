@@ -14,6 +14,8 @@ const organizationSchema = {
   '@type': 'Organization',
   name: 'Redshift Securities',
   url: 'https://redshiftsecurities.com',
+  logo: 'https://redshiftsecurities.com/redshift-site-logo.png',
+  image: 'https://redshiftsecurities.com/redshift-site-logo.png',
   description: 'Proprietary trading firm specializing in ML-driven systematic trading across Indian markets.',
   foundingDate: '2024',
   founder: { '@type': 'Person', name: 'Tanishq Gupta' },
