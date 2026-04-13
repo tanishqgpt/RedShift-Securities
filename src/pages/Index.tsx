@@ -18,9 +18,12 @@ const organizationSchema = {
   image: 'https://redshiftsecurities.com/redshift-site-logo.png',
   description: 'Proprietary trading firm specializing in ML-driven systematic trading across Indian markets.',
   foundingDate: '2024',
-  founder: { '@type': 'Person', name: 'Tanishq Gupta' },
+  founder: [
+    { '@type': 'Person', name: 'Tanishq Gupta' },
+    { '@type': 'Person', name: 'Samparka Maity' },
+  ],
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
-  sameAs: ['https://www.linkedin.com/in/tanishq-gupta-140824133'],
+  sameAs: ['https://www.linkedin.com/in/tanishq-gupta-140824133', 'https://www.linkedin.com/in/samparka/'],
 };
 
 const services = [
@@ -37,12 +40,20 @@ const markets = [
   { name: 'Currency Derivatives', desc: 'INR currency pairs on NSE and BSE currency segments' },
 ];
 
-const founder = {
-  name: 'Tanishq Gupta',
-  role: 'Founder & Partner',
-  area: 'Strategy, Technology & Operations',
-  linkedin: 'https://www.linkedin.com/in/tanishq-gupta-140824133',
-};
+const team = [
+  {
+    name: 'Tanishq Gupta',
+    role: 'Founder & Partner',
+    area: 'Strategy, Technology & Operations',
+    linkedin: 'https://www.linkedin.com/in/tanishq-gupta-140824133',
+  },
+  {
+    name: 'Samparka Maity',
+    role: 'Partner',
+    area: 'Strategy & Operations',
+    linkedin: 'https://www.linkedin.com/in/samparka/',
+  },
+];
 
 export default function Index() {
   return (
@@ -278,26 +289,28 @@ export default function Index() {
         <div className="max-w-7xl mx-auto">
           <p className="mono-text text-xs tracking-[0.3em] text-primary mb-4 uppercase">Leadership</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-16">
-            Founder & <span className="text-gradient-redshift">Partner</span>
+            Our <span className="text-gradient-redshift">Partners</span>
           </h2>
-          <div className="max-w-md mx-auto">
-            <div className="glass-panel rounded-lg p-8 hover:border-primary/20 transition-colors text-center">
-              <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mb-5 mx-auto">
-                <Users className="text-muted-foreground" size={22} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {team.map((member) => (
+              <div key={member.name} className="glass-panel rounded-lg p-8 hover:border-primary/20 transition-colors text-center">
+                <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mb-5 mx-auto">
+                  <Users className="text-muted-foreground" size={22} />
+                </div>
+                <h3 className="font-display text-xl font-semibold text-foreground">{member.name}</h3>
+                <p className="text-primary text-sm mt-1">{member.role}</p>
+                <p className="text-muted-foreground text-xs mt-1">{member.area}</p>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-primary text-sm mt-4 hover:underline"
+                >
+                  <ExternalLink size={14} />
+                  LinkedIn
+                </a>
               </div>
-              <h3 className="font-display text-xl font-semibold text-foreground">{founder.name}</h3>
-              <p className="text-primary text-sm mt-1">{founder.role}</p>
-              <p className="text-muted-foreground text-xs mt-1">{founder.area}</p>
-              <a
-                href={founder.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-primary text-sm mt-4 hover:underline"
-              >
-                <ExternalLink size={14} />
-                LinkedIn
-              </a>
-            </div>
+            ))}
           </div>
         </div>
       </ScrollSection>
