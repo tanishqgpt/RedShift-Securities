@@ -49,7 +49,7 @@ const team = [
   },
   {
     name: 'Samparka Maity',
-    role: 'Partner',
+    role: 'Founder & Partner',
     area: 'Strategy & Operations',
     linkedin: 'https://www.linkedin.com/in/samparka/',
   },
