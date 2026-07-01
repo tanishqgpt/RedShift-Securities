@@ -44,12 +44,6 @@ const team = [
     area: 'Strategy, Technology & Operations',
     linkedin: 'https://www.linkedin.com/in/tanishq-gupta-140824133',
   },
-  {
-    name: 'Samparka Maity',
-    role: 'Founder & Partner',
-    area: 'Strategy & Operations',
-    linkedin: 'https://www.linkedin.com/in/samparka/',
-  },
 ];
 
 export default function Index() {
