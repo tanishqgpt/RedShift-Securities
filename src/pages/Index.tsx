@@ -18,12 +18,9 @@ const organizationSchema = {
   image: 'https://redshiftsecurities.com/redshift-site-logo.png',
   description: 'Proprietary trading firm specializing in ML-driven systematic trading across Indian markets.',
   foundingDate: '2024',
-  founder: [
-    { '@type': 'Person', name: 'Tanishq Gupta' },
-    { '@type': 'Person', name: 'Samparka Maity' },
-  ],
+  founder: { '@type': 'Person', name: 'Tanishq Gupta' },
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
-  sameAs: ['https://www.linkedin.com/in/tanishq-gupta-140824133', 'https://www.linkedin.com/in/samparka/'],
+  sameAs: ['https://www.linkedin.com/in/tanishq-gupta-140824133'],
 };
 
 const services = [
