@@ -18,12 +18,9 @@ const organizationSchema = {
   image: 'https://redshiftsecurities.com/redshift-site-logo.png',
   description: 'Proprietary trading firm specializing in ML-driven systematic trading across Indian markets.',
   foundingDate: '2024',
-  founder: [
-    { '@type': 'Person', name: 'Tanishq Gupta' },
-    { '@type': 'Person', name: 'Samparka Maity' },
-  ],
+  founder: { '@type': 'Person', name: 'Tanishq Gupta' },
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
-  sameAs: ['https://www.linkedin.com/in/tanishq-gupta-140824133', 'https://www.linkedin.com/in/samparka/'],
+  sameAs: ['https://www.linkedin.com/in/tanishq-gupta-140824133'],
 };
 
 const services = [
@@ -46,12 +43,6 @@ const team = [
     role: 'Founder & Partner',
     area: 'Strategy, Technology & Operations',
     linkedin: 'https://www.linkedin.com/in/tanishq-gupta-140824133',
-  },
-  {
-    name: 'Samparka Maity',
-    role: 'Founder & Partner',
-    area: 'Strategy & Operations',
-    linkedin: 'https://www.linkedin.com/in/samparka/',
   },
 ];
 
@@ -291,7 +282,7 @@ export default function Index() {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-16">
             Our <span className="text-gradient-redshift">Partners</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
             {team.map((member) => (
               <div key={member.name} className="glass-panel rounded-lg p-8 hover:border-primary/20 transition-colors text-center">
                 <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mb-5 mx-auto">
