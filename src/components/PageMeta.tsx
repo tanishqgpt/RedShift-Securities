@@ -9,7 +9,7 @@ interface PageMetaProps {
 }
 
 const SITE = 'https://redshiftsecurities.com';
-const SITE_NAME = 'Redshift Securities';
+const SITE_NAME = 'Redshift Trading LLP';
 const OG_IMAGE = `${SITE}/og-image.png`;
 
 export default function PageMeta({ title, description, path, type = 'website', jsonLd }: PageMetaProps) {

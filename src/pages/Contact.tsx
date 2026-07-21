@@ -38,7 +38,7 @@ export default function Contact() {
     <main className="pt-20">
       <PageMeta
         title="Contact Us"
-        description="Get in touch with Redshift Securities for institutional inquiries, partnership discussions, or regulatory matters."
+        description="Get in touch with Redshift Trading LLP for institutional inquiries, partnership discussions, or regulatory matters."
         path="/contact"
       />
       <ScrollSection>

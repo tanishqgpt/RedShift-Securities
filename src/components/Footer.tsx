@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="font-display font-bold text-xl mb-4">
               <span className="text-gradient-redshift">Redshift</span>{' '}
-              <span className="font-light text-foreground">Securities</span>
+              <span className="font-light text-foreground">Trading LLP</span>
             </h3>
             <p className="text-muted-foreground text-sm max-w-md leading-relaxed">
             AI-powered medium frequency trading across Indian markets. Operating with
@@ -45,11 +45,11 @@ export default function Footer() {
             for all investors. Past performance is not indicative of future results. The information
             on this website is for general informational purposes only and does not constitute
             investment advice, a solicitation, or an offer to buy or sell any securities or financial
-            instruments. Redshift Securities operates exclusively in Indian markets and is registered
+            instruments. Redshift Trading LLP operates exclusively in Indian markets and is registered
             with [REGULATORY_BODY] under registration number [LICENSE_NUMBER].
           </p>
           <p className="text-xs text-muted-foreground mt-4">
-            © {new Date().getFullYear()} Redshift Securities. All rights reserved.
+            © {new Date().getFullYear()} Redshift Trading LLP. All rights reserved.
           </p>
         </div>
       </div>
