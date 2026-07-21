@@ -87,10 +87,9 @@ export default function Index() {
             <p className="mono-text text-xs md:text-sm tracking-[0.3em] text-muted-foreground mb-6 uppercase">
               AI-Driven Medium Frequency Trading
             </p>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-8">
-              <span className="text-gradient-redshift">Redshift</span>
-              <br />
-              <span className="text-foreground font-light">Trading LLP</span>
+            <h1 className="font-display tracking-tight leading-[0.95] mb-8">
+              <span className="block text-5xl md:text-7xl lg:text-8xl font-bold text-gradient-redshift">Redshift</span>
+              <span className="block text-2xl md:text-3xl lg:text-4xl font-light tracking-[0.04em] text-foreground/80 mt-2 md:mt-3">Trading LLP</span>
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-body">
               Machine learning-powered trading systems. Disciplined risk management.
