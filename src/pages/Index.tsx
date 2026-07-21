@@ -35,7 +35,7 @@ const markets = [
   { name: 'Currency Derivatives', desc: 'INR currency pairs on NSE and BSE currency segments' },
 ];
 
-const team = [
+const team: { name: string; role: string; area: string; linkedin?: string }[] = [
   {
     name: 'Mr. Sohan Lal Gupta',
     role: 'Partner',
