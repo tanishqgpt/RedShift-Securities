@@ -1,6 +1,6 @@
-# Redshift Securities
+# Redshift Trading LLP
 
-A 3D-first marketing website for Redshift Securities — an ML/AI-powered medium frequency trading firm operating in Indian markets.
+A 3D-first marketing website for Redshift Trading LLP — an ML/AI-powered medium frequency trading firm operating in Indian markets.
 
 ## Tech Stack
 
@@ -63,4 +63,4 @@ src/
 
 ## License
 
-© 2026 Redshift Securities. All rights reserved.
+© 2026 Redshift Trading LLP. All rights reserved.

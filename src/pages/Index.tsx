@@ -12,15 +12,13 @@ const CosmicScene = lazy(() => import('@/components/CosmicScene'));
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Redshift Securities',
+  name: 'Redshift Trading LLP',
   url: 'https://redshiftsecurities.com',
   logo: 'https://redshiftsecurities.com/redshift-site-logo.png',
   image: 'https://redshiftsecurities.com/redshift-site-logo.png',
-  description: 'Proprietary trading firm specializing in ML-driven systematic trading across Indian markets.',
-  foundingDate: '2024',
-  founder: { '@type': 'Person', name: 'Tanishq Gupta' },
+  description: 'ML/AI-powered medium frequency proprietary trading firm operating across Indian markets.',
+  foundingDate: '2026',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
-  sameAs: ['https://www.linkedin.com/in/tanishq-gupta-140824133'],
 };
 
 const services = [
@@ -37,12 +35,26 @@ const markets = [
   { name: 'Currency Derivatives', desc: 'INR currency pairs on NSE and BSE currency segments' },
 ];
 
-const team = [
+const team: { name: string; role: string; area: string; linkedin?: string }[] = [
   {
-    name: 'Tanishq Gupta',
-    role: 'Founder & Partner',
-    area: 'Strategy, Technology & Operations',
-    linkedin: 'https://www.linkedin.com/in/tanishq-gupta-140824133',
+    name: 'Mr. Sohan Lal Gupta',
+    role: 'Partner',
+    area: 'Strategy',
+  },
+  {
+    name: 'Mrs. Padmja Gupta',
+    role: 'Partner',
+    area: 'Strategy',
+  },
+  {
+    name: 'Mr. Mahesh Kumar Agrawal',
+    role: 'Partner',
+    area: 'Strategy',
+  },
+  {
+    name: 'Mrs. Shalini Bansal',
+    role: 'Partner',
+    area: 'Strategy',
   },
 ];
 
@@ -50,8 +62,8 @@ export default function Index() {
   return (
     <main>
       <PageMeta
-        title="Redshift Securities — ML-Driven Proprietary Trading Firm in India"
-        description="Redshift Securities is a proprietary trading firm deploying ML-driven systematic strategies across Indian equities, derivatives, commodities, and currency markets."
+        title="Redshift Trading LLP — ML-Driven Proprietary Trading Firm in India"
+        description="Redshift Trading LLP is a proprietary trading firm deploying ML-driven systematic strategies across Indian equities, derivatives, commodities, and currency markets."
         path="/"
         jsonLd={organizationSchema}
       />
@@ -78,7 +90,7 @@ export default function Index() {
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.95] mb-8">
               <span className="text-gradient-redshift">Redshift</span>
               <br />
-              <span className="text-foreground font-light">Securities</span>
+              <span className="text-foreground font-light">Trading LLP</span>
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-body">
               Machine learning-powered trading systems. Disciplined risk management.
@@ -124,7 +136,7 @@ export default function Index() {
           </div>
           <div className="lg:col-span-3 space-y-6">
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Redshift Securities is a medium frequency proprietary trading firm focused exclusively on
+              Redshift Trading LLP is a medium frequency proprietary trading firm focused exclusively on
               Indian financial markets. We combine machine learning and artificial intelligence with
               robust infrastructure to deploy systematic, risk-managed strategies across NSE, BSE, and MCX.
             </p>
@@ -282,7 +294,7 @@ export default function Index() {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-16">
             Our <span className="text-gradient-redshift">Partners</span>
           </h2>
-          <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {team.map((member) => (
               <div key={member.name} className="glass-panel rounded-lg p-8 hover:border-primary/20 transition-colors text-center">
                 <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mb-5 mx-auto">
@@ -291,15 +303,17 @@ export default function Index() {
                 <h3 className="font-display text-xl font-semibold text-foreground">{member.name}</h3>
                 <p className="text-primary text-sm mt-1">{member.role}</p>
                 <p className="text-muted-foreground text-xs mt-1">{member.area}</p>
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-primary text-sm mt-4 hover:underline"
-                >
-                  <ExternalLink size={14} />
-                  LinkedIn
-                </a>
+                {member.linkedin && (
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-primary text-sm mt-4 hover:underline"
+                  >
+                    <ExternalLink size={14} />
+                    LinkedIn
+                  </a>
+                )}
               </div>
             ))}
           </div>

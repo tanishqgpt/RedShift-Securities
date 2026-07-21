@@ -117,7 +117,7 @@ export default function Careers() {
     <main className="pt-20">
       <PageMeta
         title="Careers"
-        description="Join Redshift Securities — we're hiring quantitative researchers and engineers to build ML-driven trading systems for Indian markets."
+        description="Join Redshift Trading LLP — we're hiring quantitative researchers and engineers to build ML-driven trading systems for Indian markets."
         path="/careers"
         jsonLd={{
           '@context': 'https://schema.org',
@@ -127,7 +127,7 @@ export default function Careers() {
           employmentType: 'FULL_TIME',
           hiringOrganization: {
             '@type': 'Organization',
-            name: 'Redshift Securities',
+            name: 'Redshift Trading LLP',
             sameAs: 'https://redshiftsecurities.com',
           },
           jobLocation: {
@@ -145,7 +145,7 @@ export default function Careers() {
             Build what <span className="text-gradient-redshift">matters</span>
           </h1>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mb-16 text-lg">
-            Redshift Securities is built by people who care deeply about Indian markets, machine learning, and
+            Redshift Trading LLP is built by people who care deeply about Indian markets, machine learning, and
             doing hard things well. We're looking for exceptional individuals who want to
             work at the intersection of AI, quantitative finance, and systems engineering.
           </p>
@@ -375,7 +375,7 @@ export default function Careers() {
                       value={form.coverNote}
                       onChange={e => setForm({ ...form, coverNote: e.target.value })}
                       className="w-full bg-secondary border border-border rounded-md px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary text-sm resize-none"
-                      placeholder="Tell us about your research interests, relevant experience, and why you want to join Redshift Securities..."
+                      placeholder="Tell us about your research interests, relevant experience, and why you want to join Redshift Trading LLP..."
                     />
                   </div>
 
@@ -388,7 +388,7 @@ export default function Careers() {
                   </button>
 
                   <p className="text-xs text-muted-foreground text-center">
-                    By submitting, you consent to Redshift Securities processing your personal data for recruitment purposes.
+                    By submitting, you consent to Redshift Trading LLP processing your personal data for recruitment purposes.
                   </p>
                 </form>
               )}

@@ -13,7 +13,7 @@ const NotFound = () => {
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <PageMeta
         title="Page Not Found"
-        description="The page you're looking for doesn't exist. Return to Redshift Securities homepage."
+        description="The page you're looking for doesn't exist. Return to Redshift Trading LLP homepage."
         path={location.pathname}
       />
       <div className="text-center">

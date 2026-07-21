@@ -73,7 +73,7 @@ export default function Navbar() {
             }}
             transition={{ duration: 0.3 }}
           >
-            Securities
+            Trading LLP
           </motion.span>
         </Link>
 
