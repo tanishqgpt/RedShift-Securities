@@ -21,9 +21,9 @@ export default function Compliance() {
             <div className="glass-panel rounded-lg p-8">
               <h2 className="font-display text-xl font-semibold text-foreground mb-4">Regulatory Status</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Redshift Trading LLP is a proprietary trading firm operating in Indian financial markets.
-                The firm is registered with [REGULATORY_BODY] (e.g., SEBI) under registration
-                number [LICENSE_NUMBER]. Our registered office is located at [REGISTERED_ADDRESS].
+                Redshift Trading LLP is a proprietary quantitative trading firm operating in Indian financial markets.
+                We are in the process of completing our regulatory registrations as required by applicable law.
+                Our registered office is located at [REGISTERED_ADDRESS].
               </p>
             </div>
 
