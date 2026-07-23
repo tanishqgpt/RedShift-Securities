@@ -16,7 +16,7 @@ const jobDescription = {
   location: 'India (Hybrid / Remote)',
   experience: '1+ years',
   overview:
-    'We are looking for an exceptional Quantitative Researcher to join our ML-driven quantitative trading team. You will research, design, and validate alpha-generating strategies across Indian equity and derivatives markets using advanced statistical and machine learning techniques.'
+    'We are looking for an exceptional Quantitative Researcher to join our ML-driven quantitative trading team. You will research, design, and validate alpha-generating strategies across Indian equity and derivatives markets using advanced statistical and machine learning techniques.',
   responsibilities: [
     'Research and develop novel quantitative trading strategies for Indian markets (NSE, BSE, MCX)',
     'Apply machine learning, statistical modelling, and time-series analysis to large financial datasets',
