@@ -16,7 +16,7 @@ const jobDescription = {
   location: 'India (Hybrid / Remote)',
   experience: '1+ years',
   overview:
-    'We are looking for an exceptional Quantitative Researcher to join our ML-driven systematic trading team. You will research, design, and validate alpha-generating strategies across Indian equity and derivatives markets using advanced statistical and machine learning techniques.',
+    'We are looking for an exceptional Quantitative Researcher to join our ML-driven quantitative trading team. You will research, design, and validate alpha-generating strategies across Indian equity and derivatives markets using advanced statistical and machine learning techniques.'
   responsibilities: [
     'Research and develop novel quantitative trading strategies for Indian markets (NSE, BSE, MCX)',
     'Apply machine learning, statistical modelling, and time-series analysis to large financial datasets',
@@ -117,7 +117,7 @@ export default function Careers() {
     <main className="pt-20">
       <PageMeta
         title="Careers"
-        description="Join Redshift Trading LLP — we're hiring quantitative researchers and engineers to build ML-driven trading systems for Indian markets."
+        description="Join Redshift Trading LLP — we're hiring quantitative researchers and engineers to build ML-driven quantitative trading systems for Indian markets."
         path="/careers"
         jsonLd={{
           '@context': 'https://schema.org',
@@ -145,8 +145,8 @@ export default function Careers() {
             Build what <span className="text-gradient-redshift">matters</span>
           </h1>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mb-16 text-lg">
-            Redshift Trading LLP is built by people who care deeply about Indian markets, machine learning, and
-            doing hard things well. We're looking for exceptional individuals who want to
+            Redshift Trading LLP is a quantitative trading firm built by people who care deeply about Indian markets,
+            machine learning, and doing hard things well. We're looking for exceptional individuals who want to
             work at the intersection of AI, quantitative finance, and systems engineering.
           </p>
 

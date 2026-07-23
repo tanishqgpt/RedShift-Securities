@@ -16,7 +16,7 @@ const organizationSchema = {
   url: 'https://redshiftsecurities.com',
   logo: 'https://redshiftsecurities.com/redshift-site-logo.png',
   image: 'https://redshiftsecurities.com/redshift-site-logo.png',
-  description: 'ML/AI-powered medium frequency proprietary trading firm operating across Indian markets.',
+  description: 'ML/AI-powered quantitative proprietary trading firm operating across Indian markets.',
   foundingDate: '2026',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
 };
@@ -62,8 +62,8 @@ export default function Index() {
   return (
     <main>
       <PageMeta
-        title="Redshift Trading LLP — ML-Driven Proprietary Trading Firm in India"
-        description="Redshift Trading LLP is a proprietary trading firm deploying ML-driven systematic strategies across Indian equities, derivatives, commodities, and currency markets."
+        title="Redshift Trading LLP — ML-Driven Quantitative Trading Firm in India"
+        description="Redshift Trading LLP is a quantitative proprietary trading firm deploying ML-driven systematic strategies across Indian equities, derivatives, commodities, and currency markets."
         path="/"
         jsonLd={organizationSchema}
       />
@@ -277,8 +277,8 @@ export default function Index() {
                   <p className="text-xs text-muted-foreground">Core Tech</p>
                 </div>
                 <div>
-                  <p className="font-display text-lg font-bold text-foreground">MFT</p>
-                  <p className="text-xs text-muted-foreground">Frequency</p>
+                  <p className="font-display text-lg font-bold text-foreground">Quant</p>
+                  <p className="text-xs text-muted-foreground">Strategy</p>
                 </div>
               </div>
             </div>

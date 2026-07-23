@@ -1,6 +1,6 @@
 # Redshift Trading LLP
 
-A 3D-first marketing website for Redshift Trading LLP — an ML/AI-powered medium frequency trading firm operating in Indian markets.
+A 3D-first marketing website for Redshift Trading LLP — an ML/AI-powered quantitative trading firm operating in Indian markets.
 
 ## Tech Stack
 
