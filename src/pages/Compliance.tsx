@@ -6,7 +6,7 @@ export default function Compliance() {
     <main className="pt-20">
       <PageMeta
         title="Compliance & Regulatory Information"
-        description="Redshift Trading LLP regulatory status, risk disclosures, compliance policies, and legal information for our proprietary trading operations in India."
+        description="Redshift Trading LLP regulatory status, risk disclosures, compliance policies, and legal information for our quantitative trading operations in India."
         path="/compliance"
       />
       <ScrollSection>

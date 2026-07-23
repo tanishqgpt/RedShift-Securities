@@ -16,15 +16,15 @@ const organizationSchema = {
   url: 'https://redshiftsecurities.com',
   logo: 'https://redshiftsecurities.com/redshift-site-logo.png',
   image: 'https://redshiftsecurities.com/redshift-site-logo.png',
-  description: 'ML/AI-powered medium frequency proprietary trading firm operating across Indian markets.',
+  description: 'ML/AI-powered quantitative proprietary trading firm operating across Indian markets.',
   foundingDate: '2026',
   address: { '@type': 'PostalAddress', addressCountry: 'IN' },
 };
 
 const services = [
-  { icon: TrendingUp, title: 'Proprietary Trading', desc: 'Deploying firm capital in Indian markets using systematic, ML-driven strategies with disciplined risk management.' },
+  { icon: TrendingUp, title: 'Proprietary Trading', desc: 'Deploying firm capital in Indian markets using systematic, ML-driven quantitative strategies with disciplined risk management.' },
   { icon: Cpu, title: 'ML & AI Research', desc: 'Developing and deploying machine learning models to identify patterns, optimize execution, and adapt to evolving market regimes.' },
-  { icon: Zap, title: 'Medium Frequency Execution', desc: 'Purpose-built execution systems operating at medium frequency — balancing speed with signal quality across Indian exchanges.' },
+  { icon: Zap, title: 'Quantitative Execution', desc: 'Purpose-built execution systems for systematic quant strategies — balancing speed, signal quality, and risk across Indian exchanges.' },
   { icon: Target, title: 'Quantitative Research', desc: 'Data-driven research combining statistical methods with AI to uncover structural opportunities in Indian equities and derivatives.' },
 ];
 
@@ -62,8 +62,8 @@ export default function Index() {
   return (
     <main>
       <PageMeta
-        title="Redshift Trading LLP — ML-Driven Proprietary Trading Firm in India"
-        description="Redshift Trading LLP is a proprietary trading firm deploying ML-driven systematic strategies across Indian equities, derivatives, commodities, and currency markets."
+        title="Redshift Trading LLP — ML-Driven Quantitative Trading Firm in India"
+        description="Redshift Trading LLP is a quantitative proprietary trading firm deploying ML-driven systematic strategies across Indian equities, derivatives, commodities, and currency markets."
         path="/"
         jsonLd={organizationSchema}
       />
@@ -85,14 +85,14 @@ export default function Index() {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <p className="mono-text text-xs md:text-sm tracking-[0.3em] text-muted-foreground mb-6 uppercase">
-              AI-Driven Medium Frequency Trading
+              AI-Driven Quantitative Trading
             </p>
             <h1 className="font-display tracking-tight leading-[0.95] mb-8">
               <span className="block text-5xl md:text-7xl lg:text-8xl font-bold text-gradient-redshift">Redshift</span>
               <span className="block text-3xl md:text-4xl lg:text-5xl font-light tracking-[0.04em] text-foreground/80 mt-2 md:mt-3">Trading LLP</span>
             </h1>
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-body">
-              Machine learning-powered trading systems. Disciplined risk management.
+              Machine learning-powered quantitative trading systems. Disciplined risk management.
               Systematic capital deployment across Indian markets.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -135,7 +135,7 @@ export default function Index() {
           </div>
           <div className="lg:col-span-3 space-y-6">
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Redshift Trading LLP is a medium frequency proprietary trading firm focused exclusively on
+              Redshift Trading LLP is a quantitative proprietary trading firm focused exclusively on
               Indian financial markets. We combine machine learning and artificial intelligence with
               robust infrastructure to deploy systematic, risk-managed strategies across NSE, BSE, and MCX.
             </p>
@@ -277,8 +277,8 @@ export default function Index() {
                   <p className="text-xs text-muted-foreground">Core Tech</p>
                 </div>
                 <div>
-                  <p className="font-display text-lg font-bold text-foreground">MFT</p>
-                  <p className="text-xs text-muted-foreground">Frequency</p>
+                  <p className="font-display text-lg font-bold text-foreground">Quant</p>
+                  <p className="text-xs text-muted-foreground">Strategy</p>
                 </div>
               </div>
             </div>

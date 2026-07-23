@@ -12,7 +12,7 @@ export default function Footer() {
               <span className="font-light text-foreground">Trading LLP</span>
             </h3>
             <p className="text-muted-foreground text-sm max-w-md leading-relaxed">
-            AI-powered medium frequency trading across Indian markets. Operating with
+            AI-powered quantitative trading across Indian markets. Operating with
             discipline, transparency, and a machine learning-first approach.
             </p>
           </div>
